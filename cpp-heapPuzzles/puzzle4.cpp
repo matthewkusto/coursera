@@ -20,6 +20,7 @@ int main()
   {
     x[i] = i + 3;
   }
+  cout << x << endl;
   cout << x[size] << endl;
   delete[] x;
 }
