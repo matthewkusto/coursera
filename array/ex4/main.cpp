@@ -17,7 +17,16 @@ int main() {
   // Examine capacity:  
   std::cout << "Initial Capacity: " << cubes.capacity() << std::endl;
   cubes.push_back( Cube(800) );
-  std::cout << "Size after adding: " << cubes.size() << std::endl;
+  std::cout << "1 Size after adding: " << cubes.size() << std::endl;
+  std::cout << "Capacity after adding: " << cubes.capacity() << std::endl;
+  cubes.push_back(Cube(1000));
+  std::cout << "2 Size after adding: " << cubes.size() << std::endl;
+  std::cout << "Capacity after adding: " << cubes.capacity() << std::endl;
+  cubes.push_back(Cube(1250));
+  std::cout << "3 Size after adding: " << cubes.size() << std::endl;
+  std::cout << "Capacity after adding: " << cubes.capacity() << std::endl;
+  cubes.push_back(Cube(1500));
+  std::cout << "4 Size after adding: " << cubes.size() << std::endl;
   std::cout << "Capacity after adding: " << cubes.capacity() << std::endl;
 
   // Using pointer arithmetic, ask the computer to calculate
