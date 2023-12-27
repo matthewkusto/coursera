@@ -1,6 +1,6 @@
 /**
  * Calculating the memory seperation of elements in a std::vector.
- * 
+ *
  * @author
  *   Wade Fagen-Ulmschneider <waf@illinois.edu>
  */
@@ -11,12 +11,13 @@
 
 using uiuc::Cube;
 
-int main() {
-  std::vector<Cube> cubes{ Cube(11), Cube(42), Cube(400) };
+int main()
+{
+  std::vector<Cube> cubes{Cube(11), Cube(42), Cube(400)};
 
-  // Examine capacity:  
+  // Examine capacity:
   std::cout << "Initial Capacity: " << cubes.capacity() << std::endl;
-  cubes.push_back( Cube(800) );
+  cubes.push_back(Cube(800));
   std::cout << "1 Size after adding: " << cubes.size() << std::endl;
   std::cout << "Capacity after adding: " << cubes.capacity() << std::endl;
   cubes.push_back(Cube(1000));
@@ -36,8 +37,10 @@ int main() {
 
   // Find a specific `target` cube in the array:
   Cube target = Cube(400);
-  for (unsigned i = 0; i < cubes.size(); i++) {
-    if (target == cubes[i]) {
+  for (unsigned i = 0; i < cubes.size(); i++)
+  {
+    if (target == cubes[i])
+    {
       std::cout << "Found target at [" << i << "]" << std::endl;
     }
   }
